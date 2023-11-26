@@ -15,9 +15,22 @@ body {
     flex-basis: 616px;
 }
 
+.card__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
 .card__description {
     line-height: 1.5rem;
     margin: 0;
+}
+
+.card__info {
+    flex-basis: 380px;
+    flex-grow: 1;
 }
 
 .card__link {
