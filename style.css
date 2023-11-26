@@ -15,7 +15,25 @@ body {
     flex-basis: 616px;
 }
 
+.card__description {
+    line-height: 1.5rem;
+    margin: 0;
+}
+
 .card__link {
     color: #E20613;
     text-decoration: none;
+}
+
+.card__name {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card__position {
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0;
+    color: #545454;
 }
