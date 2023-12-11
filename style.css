@@ -4,7 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -59,38 +58,54 @@ body {
 }
 
 .hamburger {
-    width: 35px;
-    height: 4px;
-    background-color: white;
-    margin: 5px 0;
-  }
-/* .fa-bars {
-    font-size: 24px;
-    color: white;
-    display: block;
-} */
+    display: flex;
+    padding: 4px;
+    background: none;
+    border: 0;
+    font-size: 2rem;
+    /* flex: 1; */
+    /* width: 50px; */
+    /* align-items: flex-end; */
+    /* justify-self: flex-end; */
+    /* width: 100%; */
+}
 
+
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    gap: 6px;
+}
 
 .nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    justify-content: flex-end;
+    display: none;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* width: 100%; */
+    gap: 5px;
+    justify-content: center;
     /* justify-content: space-around; */
     /* position: static; */
     /* top: 0; */
-    height: 40px;
-    width: 100%;
+    min-height: 40px;
+    /* width: 100%; */
     /* flex-grow: 1; */
 }
 
 .nav__link {
     text-decoration: none;
     color: white;
-    display: none;
+    /* display: none; */
     /* justify-content: space-around; */
 
+}
+
+.nav__open {
+    display: flex;
+    /* overflow: hidden; */
 }
 
 @media screen and (min-width: 768px) {
@@ -98,12 +113,14 @@ body {
         display: flex;
     }
 
-    .hamburger__container {
+    .hamburger {
         display: none;
     }
 
     .nav {
         justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
     }
 
     .card {
