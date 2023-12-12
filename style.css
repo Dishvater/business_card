@@ -97,7 +97,9 @@ header{
 
 .nav__link {
     text-decoration: none;
-    color: white;
+    color: grey;
+    border: 2px solid grey;
+    padding: 10px;
     /* display: none; */
     /* justify-content: space-around; */
 
@@ -109,11 +111,14 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    gap: 10px;
-    padding: 1rem;
+    /* gap: 4px; */
+    /* padding: 1rem; */
+    margin: 5px;
     justify-content: flex-start;
     min-height: 40px;
     z-index: 10;
+    background-color: #4c3872;
+    width: 60vw;
 }
 
 @media screen and (min-width: 768px) {
